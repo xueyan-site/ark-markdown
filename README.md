@@ -1,6 +1,6 @@
 # xueyan-react-markdown
 
-xueyan-react-markdown is a react package.
+xueyan-react-markdown is a react markdown component.
 
 The project created by xueyan <yang@xueyan.site>.
 
