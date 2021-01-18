@@ -1,6 +1,6 @@
 {
   "name": "xueyan-react-markdown",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "xueyan <yang@xueyan.site>",
   "license": "MIT",
   "description": "React Markdown Component with Atom One Dark and Light Style",
@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.12.5",
+    "classnames": "^2.2.6",
     "react-markdown": "^5.0.3",
     "react-syntax-highlighter": "^15.4.3",
     "remark-gfm": "^1.0.0"
@@ -43,6 +44,7 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.11",
     "@types/react": "^16.9.49",
     "@types/react-syntax-highlighter": "^13.5.0",
     "react": "^16.13.1",
