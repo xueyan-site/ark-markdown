@@ -9,7 +9,7 @@ The project created by xueyan <yang@xueyan.site>.
 - NPM: `npm i xueyan-react-markdown`  
 - YARN: `yarn add xueyan-react-markdown`  
 
-## Use
+## Usage
 
 ```ts
 import React from 'react'
