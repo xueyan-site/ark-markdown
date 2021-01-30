@@ -1,4 +1,3 @@
-import { createContext } from 'react'
 import { ReactMarkdownProps } from 'react-markdown'
 
 export interface MarkdownConfig {
@@ -37,5 +36,3 @@ export interface MarkdownArticleProps extends MarkdownConfig {
    */
   children?: React.ReactNode
 }
-
-export const Config = createContext<MarkdownConfig>({})
