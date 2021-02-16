@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGFM from 'remark-gfm'
 import Highlighter from 'react-syntax-highlighter'
 import { atomOneDark, atomOneLight } from 'react-syntax-highlighter/dist/esm/styles/hljs'
-import { useMarkdownConfig } from './tools'
+import { useMarkdownConfig } from './stores'
 import { MarkdownSegmentProps } from './types'
 import styles from './index.module.scss'
 

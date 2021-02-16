@@ -1,15 +1,24 @@
 # xueyan-react-markdown
 
-xueyan-react-markdown is a react markdown component.
+xueyan-react-markdown 是一个 react markdown 组件包。  
+xueyan-react-markdown is a react markdown component.  
 
-The project created by xueyan <yang@xueyan.site>.
+本项目创建自 xueyan <yang@xueyan.site>。  
+The project created by xueyan <yang@xueyan.site>.  
 
-## Install
+## 下载 Install
 
-- NPM: `npm i xueyan-react-markdown`  
-- YARN: `yarn add xueyan-react-markdown`  
+```bash
+# 如果你使用的是NPM：
+# if you use NPM: 
+npm i xueyan-react-markdown
 
-## Usage
+# 如果你使用的是Yarn：
+# if you use Yarn: 
+yarn add xueyan-react-markdown
+```
+
+## 示例 Example
 
 ```ts
 import React from 'react'
@@ -18,21 +27,23 @@ import { MarkdownAirticle, MarkdownSegment } from 'xueyan-react-markdown'
 const content = `
 # h1 Heading
 
+> description...  
+
 ## h2 Heading
+
+- list
+  - list item
+  - list item
+
+---
 
 ### h3 Heading
 
-#### h4 Heading
+`code_tag`  
 
-##### h5 Heading
-
-###### h6 Heading
-
-## Horizontal Rules
-
-___
-
-## Typographic replacements
+\`\`\`typescript
+console.log('this is code demo')
+\`\`\`
 
 Enable typographer option to see result.
 

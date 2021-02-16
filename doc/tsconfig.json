@@ -21,7 +21,6 @@
     "baseUrl": ".",
     "paths": {
       "xueyan-react-markdown": ["../src"],
-      "components/*": ["./src/components/*"],
       "pages/*": ["./src/pages/*"]
     }
   }

@@ -1,35 +1,84 @@
 /**
  * @package xueyan-react-markdown
  * @author xueyan <yang@xueyan.site>
- * @description doc entry
+ * @description 文档入口 document entry
  */
 
-import React from "react"
+import React, { lazy } from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
-import Sidebar, { TMenu } from 'components/sidebar'
-import Example from 'pages/example'
+import Pages, { PageSources } from 'xueyan-react-pages'
 import './index.scss'
 
-const pageList: TMenu[] = [
-  {
-    key: 'examples',
-    name: 'examples',
-    nodeList: [
+const Readme = lazy(() => import('./readme'))
+
+const sources: PageSources = {
+  en: {
+    header: 'xueyan-react-markdown',
+    groupList: [
       {
-        key: 'example',
-        name: 'example',
-        path: '/example',
-        component: Example
+        name: 'api',
+        nodeList: [
+          {
+            path: '/api-one',
+            name: 'SwitchProps',
+            component: lazy(() => import('pages/en/api-one'))
+          }
+        ]
       },
+      {
+        name: 'use',
+        nodeList: [
+          {
+            path: '/use-one',
+            name: 'normal',
+            component: lazy(() => import('pages/en/use-one'))
+          },
+          {
+            path: '/use-two',
+            name: 'block element',
+            component: lazy(() => import('pages/en/use-two'))
+          }
+        ]
+      }
     ]
-  }
-]
+  },
+  zh: {
+    header: 'xueyan-react-markdown',
+    groupList: [
+      {
+        name: '接口',
+        nodeList: [
+          {
+            path: '/api-one',
+            name: 'SwitchProps',
+            component: lazy(() => import('pages/zh/api-one'))
+          }
+        ]
+      },
+      {
+        name: '示例',
+        nodeList: [
+          {
+            path: '/use-one',
+            name: '常规用法',
+            component: lazy(() => import('pages/zh/use-one'))
+          },
+          {
+            path: '/use-two',
+            name: '显示为块级元素',
+            component: lazy(() => import('pages/zh/use-two'))
+          }
+        ]
+      }
+    ]
+  },
+}
 
 function App() {
   return (
     <BrowserRouter>
-      <Sidebar header="EXAMPLES" menuList={pageList} />
+      <Pages readme={Readme} sources={sources} />
     </BrowserRouter>
   )
 }

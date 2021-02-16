@@ -1,5 +1,4 @@
-
-# h1 Heading 8-)
+# h1 Heading
 
 ## h2 Heading
 
@@ -172,7 +171,7 @@ Duplicated footnote reference[^second].
 
 [^first]: Footnote **can have markup**
 
-    and multiple paragraphs.
+and multiple paragraphs.
 
 [^second]: Footnote text.
 
@@ -187,9 +186,9 @@ Term 2 with *inline markup*
 
 :   Definition 2
 
-        { some code, part of Definition 2 }
+{ some code, part of Definition 2 }
 
-    Third paragraph of definition 2.
+Third paragraph of definition 2.
 
 _Compact style:_
 

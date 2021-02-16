@@ -1,10 +1,17 @@
 {
   "name": "xueyan-react-markdown",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "author": "xueyan <yang@xueyan.site>",
   "license": "MIT",
   "description": "React Markdown Component with Atom One Dark and Light Style",
   "xueyan": "xueyan.json",
+  "main": "dist/lib",
+  "module": "dist/es",
+  "types": "dist/types",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xueyan-site/xueyan-react-markdown.git"
+  },
   "keywords": [
     "react",
     "markdown",
@@ -14,13 +21,6 @@
     "atom-one-dark",
     "atom-one-light"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/xueyan-site/xueyan-react-markdown.git"
-  },
-  "main": "dist/lib",
-  "module": "dist/es",
-  "types": "dist/types",
   "files": [
     "dist/**/*"
   ],
@@ -37,7 +37,8 @@
     "classnames": "^2.2.6",
     "react-markdown": "^5.0.3",
     "react-syntax-highlighter": "^15.4.3",
-    "remark-gfm": "^1.0.0"
+    "remark-gfm": "^1.0.0",
+    "xueyan-react-store": "^1.0.0"
   },
   "peerDependencies": {
     "react": "^16.13.1",
