@@ -4,19 +4,19 @@
  * @description 包入口 package entry
  */
 
-export { default as MarkdownAirticle } from './markdown-article'
+export { default as Article } from './article'
 
-export { default as MarkdownSegment } from './markdown-segment'
+export { default as Segment } from './segment'
 
-export { default as markdownStyles } from './index.module.scss'
+export { default as styles } from './index.scss'
 
 export {
   useMarkdownConfig,
   useMarkdownConfigStore
 } from './stores'
 
-export {
+export type {
   MarkdownConfig,
-  MarkdownArticleProps,
-  MarkdownSegmentProps
+  ArticleProps,
+  SegmentProps
 } from './types'

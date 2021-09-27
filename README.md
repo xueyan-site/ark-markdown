@@ -1,66 +1,28 @@
 # xueyan-react-markdown
 
-xueyan-react-markdown 是一个 react markdown 组件包。  
-xueyan-react-markdown is a react markdown component.  
+`xueyan-react-markdown` is a react package.  
 
-本项目创建自 xueyan <yang@xueyan.site>。  
-The project created by xueyan <yang@xueyan.site>.  
+- [xueyan-react-markdown](#xueyan-react-markdown)
+  - [Why use it](#why-use-it)
+  - [What are its highlights](#what-are-its-highlights)
+  - [How to use it](#how-to-use-it)
+  - [Interface](#interface)
+  - [Develop](#develop)
+  - [Appendix](#appendix)
 
-## 下载 Install
+## Why use it
 
-```bash
-# 如果你使用的是NPM：
-# if you use NPM: 
-npm i xueyan-react-markdown
+## What are its highlights
 
-# 如果你使用的是Yarn：
-# if you use Yarn: 
-yarn add xueyan-react-markdown
-```
+## How to use it
 
-## 示例 Example
+## Interface
 
-```ts
-import React from 'react'
-import { MarkdownAirticle, MarkdownSegment } from 'xueyan-react-markdown'
+## Develop
 
-const content = `
-# h1 Heading
+Please make sure that `Node` and `NPM` are installed on your computer, and `xueyan-typescript-cli` is installed globally. After switching current work path to this project root in CMD, you can run command `yarn start`.
 
-> description...  
+## Appendix
 
-## h2 Heading
-
-- list
-  - list item
-  - list item
-
----
-
-### h3 Heading
-
-`code_tag`  
-
-\`\`\`typescript
-console.log('this is code demo')
-\`\`\`
-
-Enable typographer option to see result.
-
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
-
-test.. test... test..... test?..... test!....
-
-!!!!!! ???? ,,  -- ---
-
-"Smartypants, double quotes" and 'single quotes'
-`
-
-export default function Example() {
-  return (
-    <MarkdownAirticle dark={true}>
-      <MarkdownSegment>{test}</MarkdownSegment>
-    </MarkdownAirticle>
-  )
-}
-```
+author - xueyan-site <yang@xueyan.site>  
+builder - [xueyan-typescript-cli](https://github.com/xueyan-site/xueyan-typescript-cli)  

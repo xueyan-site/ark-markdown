@@ -1,4 +1,4 @@
-declare module '*.module.scss' {
+declare module '*.scss' {
   const content: { [prop:string]: string }
   export default content
 }
@@ -9,11 +9,6 @@ declare module '*.json' {
 }
 
 declare module '*.txt' {
-  const content: string
-  export default content
-}
-
-declare module '*.md' {
   const content: string
   export default content
 }

@@ -2,37 +2,28 @@ import { ReactMarkdownProps } from 'react-markdown'
 
 export interface MarkdownConfig {
   /**
-   * 是否开启暗黑模式
+   * open dark mode
    */
   dark?: boolean
   /**
-   * 是否开启暗黑模式（仅针对代码模块）
+   * open dark mode for code
    */
   darkCode?: boolean
 }
 
-export type MarkdownSegmentProps = ReactMarkdownProps & {
+export type SegmentProps = ReactMarkdownProps & {
   /**
-   * 是否开启暗黑模式
+   * open dark mode
    */
   dark?: boolean
   /**
-   * 是否开启暗黑模式（仅针对代码模块）
+   * open dark mode for code
    */
   darkCode?: boolean
 }
 
-export interface MarkdownArticleProps extends MarkdownConfig {
-  /**
-   * 类名
-   */
+export interface ArticleProps extends MarkdownConfig {
   className?: string
-  /**
-   * 样式
-   */
   style?: React.CSSProperties
-  /**
-   * 内容
-   */
   children?: React.ReactNode
 }
