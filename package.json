@@ -1,6 +1,6 @@
 {
   "name": "xueyan-react-markdown",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "xueyan-site <yang@xueyan.site>",
   "license": "MIT",
   "description": "React Markdown Renderer with Dark and Light Style",
