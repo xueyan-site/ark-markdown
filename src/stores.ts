@@ -1,17 +1,17 @@
 import Store, { createProvider, useData, useStore } from 'xueyan-react-store'
 import { MarkdownConfig } from './types'
 
-const MARKDOWN_CONFIG_STORE_TYPE = 'xueyan-react-markdown-config'
+const MARKDOWN_STORE_KEY = 'XT_S_MARKDOWN'
 
 export const MarkdownConfigProvider = createProvider((props: MarkdownConfig) => {
-  return new Store<MarkdownConfig>(MARKDOWN_CONFIG_STORE_TYPE, {
+  return new Store<MarkdownConfig>(MARKDOWN_STORE_KEY, {
     dark: props.dark,
     darkCode: props.darkCode
   })
 })
 
 export function useMarkdownConfig(props: MarkdownConfig = {}) {
-  const config = useData<MarkdownConfig>(MARKDOWN_CONFIG_STORE_TYPE)
+  const config = useData<MarkdownConfig>(MARKDOWN_STORE_KEY)
   const realDark = props.dark !== undefined ? props.dark : config.dark
   const realDarkCode = props.darkCode !== undefined
     ? props.darkCode
@@ -25,5 +25,5 @@ export function useMarkdownConfig(props: MarkdownConfig = {}) {
 }
 
 export function useMarkdownConfigStore() {
-  return useStore<Store<MarkdownConfig>>(MARKDOWN_CONFIG_STORE_TYPE)
+  return useStore<Store<MarkdownConfig>>(MARKDOWN_STORE_KEY)
 }
