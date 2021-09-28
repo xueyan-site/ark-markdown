@@ -15,8 +15,7 @@
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
     "xueyan-react": "^1.3.2",
-    "xueyan-react-doc": "^1.1.0",
-    "xueyan-react-store": "^2.0.2"
+    "xueyan-react-doc": "^1.1.0"
   },
   "devDependencies": {
     "@babel/runtime": "^7.12.0",
