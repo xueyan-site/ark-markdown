@@ -5,11 +5,11 @@ const MARK1 = `
 ## 下载
 
 \`\`\`bash
-npm i xueyan-react-pages
+npm i xueyan-react-markdown
 \`\`\`
 
 \`\`\`bash
-yarn add xueyan-react-pages
+yarn add xueyan-react-markdown
 \`\`\`
 `
 
