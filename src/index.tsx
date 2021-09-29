@@ -13,7 +13,7 @@ export { default as styles } from './index.scss'
 export {
   useMarkdownConfig,
   useMarkdownConfigStore
-} from './stores'
+} from './store'
 
 export type {
   MarkdownConfig,

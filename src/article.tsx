@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import cn from 'classnames'
 import Store from 'xueyan-react-store'
 import { MarkdownConfig, ArticleProps } from './types'
-import { MarkdownConfigProvider } from './stores'
+import { MarkdownConfigProvider } from './store'
 import styles from './index.scss'
 
 export default function Article({ dark, darkCode, className, children, ...props }: ArticleProps) {
