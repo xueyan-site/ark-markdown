@@ -50,6 +50,11 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.9.tgz#6410af31b26bd0520933d02cbc64fce9ce3fbf0b"
   integrity sha512-rpw6JPxK6Rfg1zLOYCSwle2GFOOsnjmDYDaBwEcwoOg4qlsIVCN789VkBZDJAGi4T07gI4YSutR43t9Zz4Lzuw==
 
+eventemitter3@^4.0.7:
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
+  integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
+
 intersection-observer@^0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/intersection-observer/-/intersection-observer-0.12.0.tgz#6c84628f67ce8698e5f9ccf857d97718745837aa"
@@ -112,17 +117,27 @@ typescript@^4.0.0:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.4.3.tgz#bdc5407caa2b109efd4f82fe130656f977a29324"
   integrity sha512-4xfscpisVgqqDfPaJo5vkd+Qd/ItkoagnHpufr+i2QCHBsNYp+G7UAoyFl8aPtx879u38wPV65rZ8qbGZijalA==
 
-xueyan-react-doc@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/xueyan-react-doc/-/xueyan-react-doc-1.1.0.tgz#b954b1b095a7422266f1db147bf1681bfa5fb76f"
-  integrity sha512-uS31NVhAMZyRIIPKYjDlTKfsfO7MiYRn7rS9Nqv6PgHmyBP36NYkoMgs0celKze0U0lGSUJZ/iICYHgR4TNs0w==
+xueyan-react-doc@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/xueyan-react-doc/-/xueyan-react-doc-1.1.2.tgz#ac21247e95255658cbddf2ef603d293fc52011cf"
+  integrity sha512-QFdmNrPYtTaL+yfy04aqO2jlyHHA9elklwC7d53aEPuslJKjXNxm6KgpqpWRkYn5HJFiWo0bppFMdjnjcZZHpQ==
   dependencies:
     "@babel/runtime" "^7.12.0"
+    xueyan-react-store "^2.0.3"
 
-xueyan-react@^1.3.2:
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/xueyan-react/-/xueyan-react-1.3.3.tgz#565f75e2c526c16311ead017e8030e24deec8c69"
-  integrity sha512-SX3n6IqxKfjyweccorMlIXHZrGZi+uwku0rHlXKYJvXPuaWrWFmAQz2pJNsfI+fH/3bGsFqd+eBAor7u3gWLHQ==
+xueyan-react-store@^2.0.3, xueyan-react-store@^2.0.5:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/xueyan-react-store/-/xueyan-react-store-2.0.6.tgz#f871db29970d40d5a411975a8a38c042d99f423e"
+  integrity sha512-BrWIM1eYHeCxEWrA6T+jrx4sBX2lJtQw3ICXKLtS98T7U4Rcl3j0TV2uS1f4sDJCfsbeITmpA+pJu1wa8Eis+A==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    eventemitter3 "^4.0.7"
+
+xueyan-react@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/xueyan-react/-/xueyan-react-1.4.0.tgz#a6ce152cae6e0b5570f751b71896d055d9a91a32"
+  integrity sha512-2YdzD9BHFCjtEiYSUsJBC/B40OL6oVdsdveWH05368lZgcw6c37QNHsnNWfXm4wfQePMJOHmBp9e4lN1lPIUgQ==
   dependencies:
     "@babel/runtime" "^7.12.5"
     intersection-observer "^0.12.0"
+    xueyan-react-store "^2.0.5"

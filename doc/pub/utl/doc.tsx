@@ -33,12 +33,11 @@ export interface PageDocProps extends
   Omit<DocConfig, 'id'|'name'|'version'|'description'|'avatar'|'logos'|'article'>,
   PageProps {}
 
-export default function PageDoc(props: PageDocProps) {
-  const { page, pager } = props
-  const { path, query } = page
+export default function PageDoc({ page, ...other }: PageDocProps) {
+  const { path, query, router } = page
   return (
     <Doc
-      {...props}
+      {...other}
       id={pkg.name}
       name={pkg.name}
       version={pkg.version}
@@ -47,7 +46,7 @@ export default function PageDoc(props: PageDocProps) {
       logos={LOGOS}
       article={query.article || 'intro'}
       onChange={node => {
-        pager.changeUrl(path, {
+        router.changeUrl(path, {
           ...query,
           article: node.id
         })
