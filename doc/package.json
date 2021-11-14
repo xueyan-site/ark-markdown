@@ -1,6 +1,6 @@
 {
   "name": "xueyan-react-markdown-doc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "xueyan-site <yang@xueyan.site>",
   "description": "xueyan-react-markdown project document",
   "private": true,
@@ -15,7 +15,7 @@
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
     "xueyan-react": "^1.4.0",
-    "xueyan-react-doc": "^1.1.2"
+    "xueyan-react-doc": "^1.1.3"
   },
   "devDependencies": {
     "@babel/runtime": "^7.12.0",

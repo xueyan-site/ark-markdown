@@ -4,21 +4,23 @@ import { Article, Segment } from 'xueyan-react-markdown'
 const MARK1 = `
 ## xueyan-react-markdown
 
-它是一个 Markdown 渲染组件，用于在 React 项目中渲染 markdown 文本的场景。  
+这是一个渲染 markdown 文本的 React 组件。  
 
 其内部封装了 \`react-markdown\`，\`react-syntax-highlighter\`，\`remark-gfm\` 库。  
 
-若对 Markdown 不了解，可看 <https://commonmark.org/help>。
+> 了解 Markdown：<https://commonmark.org/help>。
 `
 
 const MARK2 = `
 ## 二级标题
 
+### 三级标题 \`标签\`
+
+---
+
 - list
   - list item
   - list item
-
-### 三级标题 \`标签\`
 
 > 这是一行注释
 
@@ -29,24 +31,16 @@ function render() {
   )
 }
 \`\`\`
-
----
-
-test.. test... test..... test?..... test!....
-
-!!!!!! ???? ,,  -- ---
-
-"Smartypants, double quotes" and 'single quotes'
 `
 
 const MARK3 = `
 ## 亮点
 
-1、内置黑白两套样式（参照自 Github Markdown 主题）。  
+1、内置黑白两套样式。  
 
-2、内置代码高亮库，不用额外处理 code highlight 相关问题。  
+2、内置代码高亮库。  
 
-3、自由度高，可分成多段 markdown 文本进行渲染，片段之间可以插入任意 React 节点。  
+3、可分成多段 markdown 文本进行渲染，片段之间可以插入任意 React 节点。  
 `
 
 const MARK4 = `
@@ -65,7 +59,7 @@ export default function Main() {
   return (
     <Article>
       <Segment>{MARK1}</Segment>
-      <Segment>## 主题</Segment>
+      <Segment>## 样式</Segment>
       <div style={{ display: 'flex', flexFlow: 'row wrap' }}>
         <div style={{ flex: 1, backgroundColor: '#fff', padding: '16px' }}>
           <Segment>{'# Light\n'+MARK2}</Segment>
