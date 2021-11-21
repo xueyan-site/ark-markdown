@@ -54,10 +54,11 @@ export default function Segment({ dark, darkCode, className, ...props }: Segment
   const config = useMarkdownConfig({ dark, darkCode })
   return (
     <Markdown
+      linkTarget="_blank"
+      allowDangerousHtml={true}
       {...props as any}
       className={cn(className, config.dark && styles.dark)}
       plugins={[remarkGFM]}
-      allowDangerousHtml={true}
       renderers={{
         code: config.darkCode ? darkCodeRenderer : lightCodeRenderer,
         heading: headerRenderer

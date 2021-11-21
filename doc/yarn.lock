@@ -117,10 +117,10 @@ typescript@^4.0.0:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.4.3.tgz#bdc5407caa2b109efd4f82fe130656f977a29324"
   integrity sha512-4xfscpisVgqqDfPaJo5vkd+Qd/ItkoagnHpufr+i2QCHBsNYp+G7UAoyFl8aPtx879u38wPV65rZ8qbGZijalA==
 
-xueyan-react-doc@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/xueyan-react-doc/-/xueyan-react-doc-1.1.3.tgz#1336d74f290d9296dd0424427e3aa43b604ecd9e"
-  integrity sha512-CeaSSpjuGO5ul3JjqWxVBgVj8oletWF5hXo74NIKE+OySk9zg1uEP5JCT2I83outQ4rTgFjMr7ODVZox2/F5wQ==
+xueyan-react-doc@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/xueyan-react-doc/-/xueyan-react-doc-1.1.4.tgz#01584e562b1710214af8999b462514f18f2505e2"
+  integrity sha512-JXNVQGBG0YwVwcpou8z1VGbJOoxVEaeIYEt4LWHjbrAUUelLa/Csb705mkpuIRHYA3lcr3kgTuNbDSVKibeLbg==
   dependencies:
     "@babel/runtime" "^7.12.0"
     xueyan-react-store "^2.0.6"
