@@ -8,9 +8,9 @@
   "types": "dist/def",
   "module": "dist/web",
   "keywords": [
-    "react",
     "markdown",
     "component",
+    "react",
     "xueyan",
     "typescript"
   ],
@@ -23,8 +23,7 @@
   ],
   "scripts": {
     "start": "xt start",
-    "build": "xt build",
-    "serve": "xt serve"
+    "build": "xt build"
   },
   "dependencies": {
     "@babel/runtime": "^7.12.0",

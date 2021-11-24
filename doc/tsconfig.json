@@ -1,5 +1,4 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
   "include": [ "src", "pub", "typings.d.ts" ],
   "exclude": ["node_modules", "*.test.*"],
   "compilerOptions": {
@@ -30,8 +29,8 @@
     "removeComments": false,
     "baseUrl": ".",
     "paths": {
-      "src/*": ["./src/*"],
       "ast/*": ["./pub/ast/*"],
+      "com/*": ["./pub/com/*"],
       "utl/*": ["./pub/utl/*"],
       "xueyan-react-markdown": ["../src"]
     }

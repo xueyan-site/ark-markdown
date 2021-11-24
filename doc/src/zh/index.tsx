@@ -1,5 +1,5 @@
 import React from 'react'
-import Doc from 'utl/doc'
+import Doc from 'com/doc'
 import type { PageProps } from 'xueyan-react'
 import type { ArticleMeta } from 'xueyan-react-doc'
 
@@ -10,37 +10,37 @@ const CONTENTS: ArticleMeta[] = [
     content: () => import('./intro')
   },
   {
-    id: 'a',
+    id: 'theme',
     label: '主题',
     content: () => import('./theme')
   },
   {
-    id: 'b',
-    label: '快速开始',
+    id: 'start',
+    label: '开始',
     content: () => import('./start')
   },
   {
-    id: 'c',
+    id: 'components',
     label: '组件',
     children: [
       {
-        id: 'ca',
-        label: 'Article - 提供主题样式',
+        id: 'article',
+        label: 'Article - 提供样式',
         content: () => import('./article')
       },
       {
-        id: 'cb',
-        label: 'Segment - 翻译内容',
+        id: 'segment',
+        label: 'Segment - 渲染内容',
         content: () => import('./segment')
       }
     ]
   },
   {
-    id: 'd',
+    id: 'tools',
     label: '工具',
     children: [
       {
-        id: 'da',
+        id: 'config',
         label: 'config - 配置',
         content: () => import('./config')
       }
@@ -49,5 +49,5 @@ const CONTENTS: ArticleMeta[] = [
 ]
 
 export default function Index(props: PageProps) {
-  return <Doc {...props} contents={CONTENTS} />
+  return <Doc {...props} language="中文" contents={CONTENTS} />
 }

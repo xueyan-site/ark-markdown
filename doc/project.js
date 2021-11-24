@@ -12,8 +12,8 @@ module.exports = {
     port: 15001
   },
   alias: {
-    src: 'src',
     ast: 'pub/ast',
+    com: 'pub/com',
     utl: 'pub/utl',
     'xueyan-react-markdown': '../src'
   },
@@ -25,7 +25,7 @@ module.exports = {
       lodash: '_'
     },
     rules: {
-      row: {
+      raw: {
         test: /\.(txt|md)$/i
       }
     }
@@ -53,14 +53,14 @@ module.exports = {
     ],
     styles: [
       {
-        key: 'global',
-        rel: 'stylesheet',
-        href: '{{XT_PATH}}index.css'
-      },
-      {
         key: 'normalize',
         rel: 'stylesheet',
         href: 'https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css'
+      },
+      {
+        key: 'global',
+        rel: 'stylesheet',
+        href: '{{XT_PATH}}global.css'
       }
     ],
     scripts: [

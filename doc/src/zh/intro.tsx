@@ -6,7 +6,9 @@ const MARK1 = `
 
 渲染 markdown 文本的 React 组件。  
 
-封装了 \`react-markdown\`，\`react-syntax-highlighter\`，\`remark-gfm\` 等库。内设黑白两套主题，支持高亮代码，可分成多段 markdown 文本进行渲染。  
+封装了 \`react-markdown\`，\`react-syntax-highlighter\`，\`remark-gfm\` 等库。
+
+内设黑白两套主题，支持高亮代码，可分成多段 markdown 文本进行渲染。  
 
 > 了解 Markdown：<https://commonmark.org/help>。
 
