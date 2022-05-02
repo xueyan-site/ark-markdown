@@ -1,5 +1,6 @@
 import React from 'react'
 import { Article, Segment } from 'xueyan-react-markdown'
+import { SwitchTheme } from 'xueyan-react-style'
 
 const MARK1 = `
 ## 标题
@@ -107,17 +108,19 @@ Pipe     | \\$1
 ## 标签
 
 <table>
+  <tbody>
     <tr>
-        <th rowspan="2">xx</th>
-        <th>foo</th>
-        <th>bar</th>
-        <th>baz</th>
+      <td rowspan="2">xx</td>
+      <td>foo</td>
+      <td>bar</td>
+      <td>baz</td>
     </tr>
     <tr>
-        <td>foo</td>
-        <td>bar</td>
-        <td>baz</td>
+      <td>foo</td>
+      <td>bar</td>
+      <td>baz</td>
     </tr>
+  </tbody>
 </table>
 
 <img src="${XT_PATH}favicon.png" width="50px" />
@@ -126,13 +129,9 @@ Pipe     | \\$1
 export default function Main() {
   return (
     <Article>
-      <div style={{ display: 'flex', flexFlow: 'row wrap' }}>
-        <div style={{ flex: 1, backgroundColor: '#fff', padding: '16px', minWidth: '300px' }}>
-          <Segment>{'# 亮色主题（默认）\n'+MARK1}</Segment>
-        </div>
-        <div style={{ flex: 1, backgroundColor: '#000', padding: '16px', minWidth: '300px' }}>
-          <Segment dark={true} darkCode={true}>{'# 暗色主题\n'+MARK1}</Segment>
-        </div>
+      <div style={{ backgroundColor: 'var(--back)', padding: '16px' }}>
+        <SwitchTheme />
+        <Segment>{'# 样式\n'+MARK1}</Segment>
       </div>
     </Article>
   )

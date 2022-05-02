@@ -1,17 +1,17 @@
 {
   "name": "xueyan-react-markdown",
-  "version": "2.0.5",
-  "author": "xueyan-site <yang@xueyan.site>",
-  "license": "MIT",
-  "description": "react markdown renderer",
+  "version": "3.0.0",
+  "author": "xueyan-site <xueyan@xueyan.site>",
+  "license": "LGPL-3.0",
+  "description": "react markdown component",
   "main": "dist/node",
   "types": "dist/def",
   "module": "dist/web",
   "keywords": [
     "markdown",
-    "component",
     "react",
     "xueyan",
+    "component",
     "typescript"
   ],
   "repository": {
@@ -30,7 +30,7 @@
     "react-markdown": "^5.0.3",
     "react-syntax-highlighter": "^15.4.3",
     "remark-gfm": "^1.0.0",
-    "xueyan-react-store": "^2.0.6"
+    "xueyan-react-style": "^1.2.2"
   },
   "peerDependencies": {
     "classnames": "^2.3.0",

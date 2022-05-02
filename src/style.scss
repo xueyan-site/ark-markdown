@@ -1,7 +1,8 @@
-.markdown {
-  color: rgba(0,0,0,.8);
-  font-size: 14px;
+.xrmarkdown {
+  color: var(--font);
+  font-size: 16px;
   line-height: 1.5;
+  font-weight: 400;
   word-wrap: break-word;
   text-size-adjust: 100%;
   font-family: 
@@ -32,7 +33,7 @@
     margin-bottom: 0 !important;
   }
   h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 24px 0 16px;
+    margin: 24px 0 16px;
     line-height: 1.25;
     font-weight: 600;
     .anchor {
@@ -40,26 +41,26 @@
     }
   }
   h1 {
-    font-size: 28px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid rgba(0,0,0,.08);
+    font-size: 32px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid var(--alpha5);
   }
   h2 {
-    font-size: 24px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid rgba(0,0,0,.08);
+    font-size: 28px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--alpha5);
   }
   h3 {
-    font-size: 21px;
+    font-size: 24px;
   }
   h4 {
-    font-size: 18px;
+    font-size: 21px;
   }
   h5 {
-    font-size: 16px;
+    font-size: 18px;
   }
   h6 {
-    font-size: 14px;
+    font-size: 16px;
   }
   details {
     display: block;
@@ -73,7 +74,7 @@
     display: list-item;
   }
   a {
-    color: rgba(0,127,255,.8);
+    color: var(--main);
     text-decoration: none;
     background-color: initial;
     &:active {
@@ -98,16 +99,15 @@
   }
   code {
     margin: 0;
-    padding: 2px 4px;
-    display: inline-block;
+    padding: 0.1em 0.4em;
     font-size: 0.85em;
-    line-height: 1.25;
-    border-radius: 3px;
-    background-color: rgba(0,127,255,.4);
+    border-radius: 6px;
+    display: inline-block;
+    background-color: var(--alpha4);
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
   }
   pre, pre code {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.4;
     word-wrap: normal;
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
@@ -117,14 +117,12 @@
     margin-bottom: 16px;
     padding: 12px;
     overflow: auto;
-    border-radius: 6px;
-    background-color: rgba(244,248,252,.8);
+    background-color: var(--back1);
     -webkit-overflow-scrolling: touch;
     code {
       border: 0;
       margin: 0;
       padding: 0;
-      border-radius: 0;
       background-color: transparent;
       word-break: normal;
       white-space: pre;
@@ -140,7 +138,7 @@
     padding: 0;
     height: 3px;
     margin: 24px 0;
-    background-color: rgba(0,0,0,.08);
+    background-color: var(--beta5);
     &:after {
       display: table;
       content: "";
@@ -175,18 +173,19 @@
     margin-top: 0;
     margin-bottom: 16px;
     overflow: auto;
-    background-color: rgba(244,248,252,.8);
+    background-color: var(--back1);
     th {
       font-weight: 600;
       padding: 6px 12px;
-      border: 1px solid rgb(224,227,230);
+      border: 1px solid var(--beta5);
+      background-color: var(--beta4);
     }
     td {
       padding: 6px 12px;
-      border: 1px solid rgb(224,227,230);
+      border: 1px solid var(--beta5);
     }
-    tr:nth-child(2n+1) td {
-      background-color: rgba(230,234,238,.5);
+    tbody tr:nth-child(2n+1) td {
+      background-color: var(--gamma3);
     }
   }
   td {
@@ -203,10 +202,9 @@
     margin: 0;
     margin-top: 0;
     margin-bottom: 16px;
-    padding: 8px;
-    opacity: .8;
-    border-left: 3px solid rgba(0,127,255,.4);
-    background-color: rgba(0,127,255,.2);
+    padding: 8px 16px;
+    background-color: var(--main4);
+    border-left: 4px solid var(--main2);
     > :first-child {
       margin-top: 0;
     }
@@ -267,40 +265,5 @@
   }
   img[align=left] {
     padding-right: 20px;
-  }
-}
-.markdown.dark, .markdown .dark {
-  color: rgba(255,255,255,.8);
-  h1, h2, h3, h4, h5, h6 {
-    .anchor {
-      color: inherit;
-    }
-  }
-  h1 {
-    border-bottom-color: rgba(255,255,255,.08);
-  }
-  h2 {
-    border-bottom-color: rgba(255,255,255,.08);
-  }
-  pre {
-    background-color: rgba(40,44,52,.8);
-    code {
-      background-color: transparent;
-    }
-  }
-  hr {
-    background-color: rgb(255,255,255,.08);
-  }
-  table {
-    background-color: rgba(40,44,52,.8);
-    th {
-      border-color: rgb(48,54,60);
-    }
-    td {
-      border-color: rgb(48,54,60);
-    }
-    tr:nth-child(2n+1) td {
-      background-color: rgb(20,24,28,.5);
-    }
   }
 }

@@ -48,6 +48,23 @@ const CONTENTS: ArticleMeta[] = [
   }
 ]
 
+const MESSAGES: ArticleMeta[] = [
+  {
+    id: 'config',
+    label: 'config - 配置',
+    content: () => import('./config')
+  }
+]
+
 export default function Index(props: PageProps) {
-  return <Doc {...props} language="中文" contents={CONTENTS} />
+  return (
+    <Doc 
+      {...props}
+      language="中文"
+      contentsLabel="教程"
+      contents={CONTENTS}
+      messagesLabel="规范"
+      messages={MESSAGES}
+    />
+  )
 }

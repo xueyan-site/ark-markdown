@@ -1,22 +1,7 @@
-/**
- * @package xueyan-react-markdown
- * @author xueyan <yang@xueyan.site>
- * @description 包入口 package entry
- */
+import 'xueyan-react-style'
 
-export { default as Article } from './article'
+export { Article } from './article'
+export { Segment } from './segment'
 
-export { default as Segment } from './segment'
-
-export { default as styles } from './index.scss'
-
-export {
-  useMarkdownConfig,
-  useMarkdownConfigStore
-} from './store'
-
-export type {
-  MarkdownConfig,
-  ArticleProps,
-  SegmentProps
-} from './types'
+export type { ArticleProps } from './article'
+export type { SegmentProps } from './segment'

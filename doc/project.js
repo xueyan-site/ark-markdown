@@ -1,16 +1,7 @@
-const pkg = require('../package.json')
-
 module.exports = {
   type: 'react-csr',
   index: 'zh',
   track: false,
-  path: pkg.name,
-  serve: {
-    port: 10001
-  },
-  start: {
-    port: 15001
-  },
   alias: {
     ast: 'pub/ast',
     com: 'pub/com',

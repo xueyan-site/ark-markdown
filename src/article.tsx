@@ -1,22 +1,17 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import cn from 'classnames'
-import Store from 'xueyan-react-store'
-import { MarkdownConfig, ArticleProps } from './types'
-import { MarkdownConfigProvider } from './store'
-import styles from './index.scss'
+import styles from './style.scss'
 
-export default function Article({ dark, darkCode, className, children, ...props }: ArticleProps) {
-  const storeRef = useRef<Store<MarkdownConfig>>(null)
-  useEffect(() => {
-    if (storeRef.current) {
-      storeRef.current.set({ dark, darkCode })
-    }
-  }, [dark, darkCode])
+export interface ArticleProps {
+  className?: string
+  style?: React.CSSProperties
+  children?: React.ReactNode
+}
+
+export function Article({ className, style, children }: ArticleProps) {
   return (
-    <MarkdownConfigProvider ref={storeRef} dark={dark} darkCode={darkCode}>
-      <article className={cn(styles.markdown, dark && styles.dark, className)} {...props}>
-        {children}
-      </article>
-    </MarkdownConfigProvider>
+    <article className={cn(styles.xrmarkdown, className)} style={style}>
+      {children}
+    </article>
   )
 }

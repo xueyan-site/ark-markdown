@@ -62,7 +62,7 @@ export default function Main() {
           <Segment>{'# 亮色主题\n'+MARK2}</Segment>
         </div>
         <div style={{ flex: 1, backgroundColor: '#000', padding: '16px' }}>
-          <Segment dark={true} darkCode={true}>{'# 暗色主题\n'+MARK2}</Segment>
+          <Segment darkCode={true}>{'# 暗色主题\n'+MARK2}</Segment>
         </div>
       </div>
     </Article>
