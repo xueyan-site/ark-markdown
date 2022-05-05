@@ -38,17 +38,23 @@
     font-weight: 600;
     .anchor {
       color: inherit;
+      &:active {
+        color: var(--main5);
+      }
+      &:hover {
+        color: var(--main);
+      }
     }
   }
   h1 {
     font-size: 32px;
     padding-bottom: 9px;
-    border-bottom: 1px solid var(--alpha5);
+    border-bottom: 1px solid var(--area2);
   }
   h2 {
     font-size: 28px;
     padding-bottom: 7px;
-    border-bottom: 1px solid var(--alpha5);
+    border-bottom: 1px solid var(--area2);
   }
   h3 {
     font-size: 24px;
@@ -77,12 +83,14 @@
     color: var(--main);
     text-decoration: none;
     background-color: initial;
+    -webkit-tap-highlight-color: transparent;
     &:active {
       outline-width: 0;
+      color: var(--main5);
     }
     &:hover {
       outline-width: 0;
-      text-decoration: underline;
+      text-decoration: none;
     }
     &:not([href]) {
       color: inherit;
@@ -103,7 +111,7 @@
     font-size: 0.85em;
     border-radius: 6px;
     display: inline-block;
-    background-color: var(--alpha4);
+    background-color: var(--area2);
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
   }
   pre, pre code {
@@ -115,9 +123,9 @@
   pre {
     margin-top: 0;
     margin-bottom: 16px;
-    padding: 12px;
+    padding: 14px 12px;
     overflow: auto;
-    background-color: var(--back1);
+    background-color: var(--base1);
     -webkit-overflow-scrolling: touch;
     code {
       border: 0;
@@ -138,7 +146,7 @@
     padding: 0;
     height: 3px;
     margin: 24px 0;
-    background-color: var(--beta5);
+    background-color: var(--area2);
     &:after {
       display: table;
       content: "";
@@ -173,19 +181,19 @@
     margin-top: 0;
     margin-bottom: 16px;
     overflow: auto;
-    background-color: var(--back1);
+    background-color: var(--base1);
     th {
       font-weight: 600;
       padding: 6px 12px;
-      border: 1px solid var(--beta5);
-      background-color: var(--beta4);
+      border: 1px solid var(--area1);
+      background-color: var(--area2);
     }
     td {
       padding: 6px 12px;
-      border: 1px solid var(--beta5);
+      border: 1px solid var(--area1);
     }
     tbody tr:nth-child(2n+1) td {
-      background-color: var(--gamma3);
+      background-color: var(--area1);
     }
   }
   td {
@@ -203,8 +211,8 @@
     margin-top: 0;
     margin-bottom: 16px;
     padding: 8px 16px;
-    background-color: var(--main4);
-    border-left: 4px solid var(--main2);
+    background-color: var(--main1);
+    border-left: 4px solid var(--main5);
     > :first-child {
       margin-top: 0;
     }

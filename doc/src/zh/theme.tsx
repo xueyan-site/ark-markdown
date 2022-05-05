@@ -129,7 +129,7 @@ Pipe     | \\$1
 export default function Main() {
   return (
     <Article>
-      <div style={{ backgroundColor: 'var(--back)', padding: '16px' }}>
+      <div style={{ backgroundColor: 'var(--base)', padding: '16px' }}>
         <SwitchTheme />
         <Segment>{'# 样式\n'+MARK1}</Segment>
       </div>
