@@ -43,6 +43,7 @@
       }
       &:hover {
         color: var(--main);
+        text-decoration: none;
       }
     }
   }
@@ -90,7 +91,7 @@
     }
     &:hover {
       outline-width: 0;
-      text-decoration: none;
+      text-decoration: underline;
     }
     &:not([href]) {
       color: inherit;
