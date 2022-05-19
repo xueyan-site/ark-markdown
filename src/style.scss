@@ -181,8 +181,11 @@
     border-collapse: collapse;
     margin-top: 0;
     margin-bottom: 16px;
-    overflow: auto;
     background-color: var(--base1);
+    display: block;
+    max-width: 100%;
+    width: max-content;
+    overflow: auto;
     th {
       font-weight: 600;
       padding: 6px 12px;
