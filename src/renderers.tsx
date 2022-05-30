@@ -14,7 +14,7 @@ export function LightCode(props: any) {
     <Highlighter
       style={atomOneLight}
       customStyle={CODE_STYLE}
-      language={props.language || 'tsx'}
+      language={props.language || 'typescript'}
     >
       {props.value}
     </Highlighter>
