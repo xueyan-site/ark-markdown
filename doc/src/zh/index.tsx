@@ -1,70 +1,63 @@
 import React from 'react'
-import Doc from 'com/doc'
+import { PageDoc } from 'com/page-doc'
+import pkg from '../../../package.json'
 import type { PageProps } from 'xueyan-react'
-import type { ArticleMeta } from 'xueyan-react-doc'
+import type { Collection } from 'xueyan-react-doc'
 
-const CONTENTS: ArticleMeta[] = [
+const COLLECTIONS: Collection<string,string>[] = [
   {
-    id: 'intro',
-    label: '介绍',
-    content: () => import('./intro')
-  },
-  {
-    id: 'theme',
-    label: '主题',
-    content: () => import('./theme')
-  },
-  {
-    id: 'start',
-    label: '开始',
-    content: () => import('./start')
-  },
-  {
-    id: 'components',
-    label: '组件',
-    children: [
+    value: '9999',
+    label: '指南',
+    contents: [
       {
-        id: 'article',
-        label: 'Article - 提供样式',
-        content: () => import('./article')
+        value: '0001',
+        label: '介绍',
+        content: () => import('./0001')
       },
       {
-        id: 'segment',
-        label: 'Segment - 渲染内容',
-        content: () => import('./segment')
-      }
+        value: '0002',
+        label: '主题',
+        content: () => import('./0002')
+      },
+      {
+        value: '0003',
+        label: '开始',
+        content: () => import('./0003')
+      },
     ]
   },
   {
-    id: 'tools',
-    label: '工具',
-    children: [
+    value: '9998',
+    label: '接口文档',
+    contents: [
       {
-        id: 'config',
-        label: 'config - 配置',
-        content: () => import('./config')
+        value: '0004',
+        label: 'Article',
+        content: () => import('./0004')
+      },
+      {
+        value: '0005',
+        label: 'Segment',
+        content: () => import('./0005')
+      },
+      {
+        value: '0006',
+        label: '配置',
+        content: () => import('./0006')
       }
     ]
-  }
-]
-
-const MESSAGES: ArticleMeta[] = [
-  {
-    id: 'config',
-    label: 'config - 配置',
-    content: () => import('./config')
   }
 ]
 
 export default function Index(props: PageProps) {
   return (
-    <Doc 
+    <PageDoc 
       {...props}
-      language="中文"
-      contentsLabel="教程"
-      contents={CONTENTS}
-      messagesLabel="规范"
-      messages={MESSAGES}
+      language="zh"
+      version={pkg.version}
+      collections={COLLECTIONS}
+      name={pkg.name}
+      description={pkg.description}
     />
   )
 }

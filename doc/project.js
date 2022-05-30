@@ -1,19 +1,25 @@
+const pkg = require('../package.json')
+
 module.exports = {
   type: 'react-csr',
   index: 'zh',
-  track: false,
+  path: pkg.name,
   alias: {
-    ast: 'pub/ast',
-    com: 'pub/com',
-    utl: 'pub/utl',
-    'xueyan-react-markdown': '../src'
+    'ast': 'pub/ast',
+    'com': 'pub/com',
+    'utl': 'pub/utl',
+    'xueyan-react-markdown': '../src',
+    'xueyan-react-style': '../node_modules/xueyan-react-style'
+  },
+  serve: {
+    port: 12012
   },
   module: {
     externals: {
-      react: 'React',
+      'react': 'React',
       'react-dom': 'ReactDOM',
-      classnames: 'classNames',
-      lodash: '_'
+      'classnames': 'classNames',
+      'lodash': '_'
     },
     rules: {
       raw: {
@@ -44,11 +50,6 @@ module.exports = {
     ],
     styles: [
       {
-        key: 'normalize',
-        rel: 'stylesheet',
-        href: 'https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css'
-      },
-      {
         key: 'global',
         rel: 'stylesheet',
         href: '{{XT_PATH}}global.css'
@@ -58,22 +59,22 @@ module.exports = {
       {
         key: 'react',
         defer: true,
-        src: 'https://cdn.jsdelivr.net/npm/react@16.12.0/umd/react.production.min.js'
+        src: "https://xueyan.site/react.js"
       },
       {
         key: 'react-dom',
         defer: true,
-        src: 'https://cdn.jsdelivr.net/npm/react-dom@16.12.0/umd/react-dom.production.min.js'
+        src: "https://xueyan.site/react-dom.js"
       },
       {
         key: 'classnames',
         defer: true,
-        src: 'https://cdn.jsdelivr.net/npm/classnames@2.3.1/index.min.js'
+        src: "https://xueyan.site/classnames.js"
       },
       {
         key: 'lodash',
         defer: true,
-        src: 'https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'
+        src: "https://xueyan.site/lodash.js"
       }
     ]
   }

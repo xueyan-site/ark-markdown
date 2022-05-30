@@ -20,11 +20,11 @@ const MARK1 = `
 
 引用:
 
-> 引用...
+> 引用
 
 有充列表:
-1. 支持...
-2. 支持...
+1. 项目1
+2. 项目2
 
 ---
 
@@ -32,6 +32,10 @@ const MARK1 = `
 
 - 项目1
 - 项目2
+  - 子项目1
+  - 子项目2
+    1. 子项目1
+    2. 子项目2
 
 ## 素材
 
@@ -47,15 +51,17 @@ const MARK1 = `
         return m[key];
     }
 
-代码 \`高亮\` 示例:
+代码 \`高亮\` 默认语言是 \`tsx\`
 
-\`\`\` javascript
+\`\`\`
+import React from 'react'
+
 /**
  * nth element in the fibonacci series.
  * @param n >= 0
  * @return the nth element, >= 0.
  */
-function fib(n) {
+function fib(n: number): number {
   var a = 1, b = 1;
   var tmp;
   while (--n >= 0) {
@@ -65,10 +71,16 @@ function fib(n) {
   }
   return a;
 }
- 
-document.write(fib(10));
-console.log('this is a long long long long long long long long long long long code.)
+
+export default function Component() {
+  console.log('this is a long long long long long long long long long long long long long long long long log!')
+  return (
+    <div>fib(10): {fib(10)}</div>
+  )
+}
 \`\`\`
+
+指定代码语言是 \`python\`
 
 \`\`\`python
 class Employee:
@@ -129,7 +141,7 @@ Pipe     | \\$1
 export default function Main() {
   return (
     <Article>
-      <div style={{ backgroundColor: 'var(--base)', padding: '16px' }}>
+      <div style={{ backgroundColor: 'var(--base)' }}>
         <SwitchTheme />
         <Segment>{'# 样式\n'+MARK1}</Segment>
       </div>
