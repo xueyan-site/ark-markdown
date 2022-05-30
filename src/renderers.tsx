@@ -26,7 +26,7 @@ export function DarkCode(props: any) {
     <Highlighter
       style={atomOneDark}
       customStyle={CODE_STYLE}
-      language={props.language || 'tsx'}
+      language={props.language || 'typescript'}
     >
       {props.value}
     </Highlighter>
