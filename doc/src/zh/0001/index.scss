@@ -1,0 +1,10 @@
+.showtheme {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  .item {
+    padding: 24px 16px;
+    box-sizing: border-box;
+    background-color: var(--base);
+    border: 1px solid var(--area2);
+  }
+}

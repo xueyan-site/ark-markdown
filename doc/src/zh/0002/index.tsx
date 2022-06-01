@@ -3,20 +3,18 @@ import { Article, Segment } from 'xueyan-react-markdown'
 import { SwitchTheme } from 'xueyan-react-style'
 
 const MARK1 = `
-## 标题
-
-# 这是标题一
-## 这是标题二
-### 这是标题三
-#### 这是标题四
-##### 这是标题五
-###### 这是标题六
+# 标题一
+## 标题二
+### 标题三
+#### 标题四
+##### 标题五
+###### 标题六
 
 ## 排版
 
 **粗体** *斜体* 
 
-~~这是一段错误的文本。~~
+~~一段错误的文本。~~
 
 引用:
 
@@ -41,7 +39,7 @@ const MARK1 = `
 
 图片: ![favicon](${XT_PATH}favicon.png)
 
-链接: [这是链接](./)
+链接: [链接](./)
 
 ## 代码
 
@@ -113,7 +111,7 @@ Pipe     | \\$1
 :   定义 1
  
 代码块 2
-:   这是代码块的定义
+:   代码块的定义
  
         代码块
  
@@ -141,10 +139,8 @@ Pipe     | \\$1
 export default function Main() {
   return (
     <Article>
-      <div style={{ backgroundColor: 'var(--base)' }}>
-        <SwitchTheme />
-        <Segment>{'# 样式\n'+MARK1}</Segment>
-      </div>
+      <SwitchTheme style={{ width: '240px' }} />
+      <Segment>{MARK1}</Segment>
     </Article>
   )
 }
