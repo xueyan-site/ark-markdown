@@ -1,6 +1,6 @@
 import React from 'react'
 import cn from 'classnames'
-import { Article, Segment } from 'xueyan-react-markdown'
+import { Article, Segment } from 'ark-markdown'
 import { styles as xrss } from 'xueyan-react-style'
 import styles from './index.scss'
 
@@ -24,7 +24,7 @@ const MARK1 = `
 > 代码高亮默认语言是 \`typescript\`
 
 \`\`\`typescript
-import { Segment, Article } from 'xueyan-react-markdown'
+import { Segment, Article } from 'ark-markdown'
 
 const MARK1 = \`
 \\\`\\\`\\\`

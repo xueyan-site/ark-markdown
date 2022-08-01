@@ -1,7 +1,7 @@
 import React from 'react'
 import Markdown from 'react-markdown/with-html'
 import remarkGFM from 'remark-gfm'
-import { useColorMode } from 'xueyan-react-style'
+import { useColorMode } from 'solor'
 import { DarkCode, LightCode, Heading } from './renderers'
 import type { ReactMarkdownProps } from 'react-markdown'
 

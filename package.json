@@ -1,36 +1,35 @@
 {
-  "name": "xueyan-react-markdown",
-  "version": "3.0.6",
+  "name": "ark-markdown",
+  "version": "1.0.0",
   "author": "xueyan-site <xueyan@xueyan.site>",
   "license": "LGPL-3.0",
-  "description": "react markdown component",
+  "description": "markdown component in a react kit",
   "main": "dist/node",
   "types": "dist/def",
   "module": "dist/web",
   "keywords": [
     "markdown",
     "react",
-    "xueyan",
     "component",
     "typescript"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/xueyan-site/xueyan-react-markdown.git"
+    "url": "https://github.com/xueyan-site/ark-markdown.git"
   },
   "files": [
     "dist/**/*"
   ],
   "scripts": {
-    "start": "xt start",
-    "build": "xt build"
+    "dev": "sdin dev",
+    "build": "sdin build"
   },
   "dependencies": {
     "@babel/runtime": "^7.12.0",
     "react-markdown": "^5.0.3",
     "react-syntax-highlighter": "^15.4.3",
     "remark-gfm": "^1.0.0",
-    "xueyan-react-style": "^2.0.2"
+    "solor": "^1.0.0"
   },
   "peerDependencies": {
     "classnames": "^2.3.0",

@@ -1,8 +1,8 @@
 {
-  "name": "xueyan-react-markdown-doc",
+  "name": "ark-markdown-doc",
   "version": "1.0.0",
   "author": "xueyan-site <xueyan@xueyan.site>",
-  "description": "xueyan-react-markdown document",
+  "description": "ark-markdown document",
   "private": true,
   "scripts": {
     "start": "xt start",

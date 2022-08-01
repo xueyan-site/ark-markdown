@@ -1,7 +1,7 @@
 import React from 'react'
 import 'xueyan-react-style'
 import { Doc } from 'xueyan-react-doc'
-import { Article, Segment } from 'xueyan-react-markdown'
+import { Article, Segment } from 'ark-markdown'
 import pkg from '../../../package.json'
 import type { PageProps } from 'xueyan-react'
 import type { ImageLinkProps, DocConfig } from 'xueyan-react-doc'

@@ -1,4 +1,4 @@
-import 'xueyan-react-style'
+import 'solor'
 
 export { Article } from './article'
 export { Segment } from './segment'

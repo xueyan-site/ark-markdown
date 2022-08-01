@@ -1,5 +1,5 @@
 import React from 'react'
-import { Article, Segment } from 'xueyan-react-markdown'
+import { Article, Segment } from 'ark-markdown'
 import { SwitchTheme } from 'xueyan-react-style'
 
 const MARK1 = `
