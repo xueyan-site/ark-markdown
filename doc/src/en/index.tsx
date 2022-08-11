@@ -1,17 +1,17 @@
 import React from 'react'
 import { PageDoc } from 'com/page-doc'
 import pkg from '../../../package.json'
-import type { PageProps } from 'xueyan-react'
-import type { Collection } from 'xueyan-react-doc'
+import type { PageProps } from 'sdin-react'
+import type { Collection } from 'ark-doc'
 
 const COLLECTIONS: Collection<string,string>[] = [
   {
-    value: '1',
-    label: 'collection 1',
+    value: '9999',
+    label: 'Guide',
     contents: [
       {
-        value: '1-1',
-        label: 'chapter 1: introduction',
+        value: '0001',
+        label: 'Introduction',
         content: () => import('./0001')
       }
     ]

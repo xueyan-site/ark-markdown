@@ -1,6 +1,6 @@
 import React from 'react'
 import { Article, Segment } from 'ark-markdown'
-import { SwitchTheme } from 'xueyan-react-style'
+import { SwitchTheme } from 'solor'
 
 const MARK1 = `
 # 标题一
@@ -37,7 +37,7 @@ const MARK1 = `
 
 ## 素材
 
-图片: ![favicon](${XT_ASSETS_PATH}favicon.png)
+图片: ![favicon](${P_ASSETS_PATH}favicon.png)
 
 链接: [链接](./)
 
@@ -133,7 +133,7 @@ Pipe     | \\$1
   </tbody>
 </table>
 
-<img src="${XT_ASSETS_PATH}favicon.png" width="50px" />
+<img src="${P_ASSETS_PATH}favicon.png" width="50px" />
 `
 
 export default function Main() {

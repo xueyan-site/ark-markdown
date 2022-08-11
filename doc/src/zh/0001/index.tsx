@@ -1,7 +1,7 @@
 import React from 'react'
 import cn from 'classnames'
 import { Article, Segment } from 'ark-markdown'
-import { styles as xrss } from 'xueyan-react-style'
+import { styles as xrss } from 'solor'
 import styles from './index.scss'
 
 const MARK1 = `
@@ -15,7 +15,7 @@ const MARK1 = `
 
 使用 \`react-markdown\`，\`react-syntax-highlighter\`，\`remark-gfm\` 等库封装而成。
 
-主题使用 [xueyan-react-style](/xueyan-react-style) 实现，支持代码高亮。
+主题使用 [solor](/solor) 实现，支持代码高亮。
 
 > 了解 Markdown：<https://commonmark.org/help>
 
